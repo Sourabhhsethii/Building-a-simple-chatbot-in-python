@@ -40,7 +40,6 @@ remove_punct_dict = dict((ord(punct), None) for punct in string.punctuation)
 def LemNormalize(text):
     return LemTokens(nltk.word_tokenize(text.lower().translate(remove_punct_dict)))
 
- sss
 INPUTS = ("hello", "hi", "greetings", "good morning", "good evening","good afternoon",)
 RESPONSES = ["hi", "hello",]
 
